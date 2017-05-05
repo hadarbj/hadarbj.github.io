@@ -30,13 +30,13 @@ footer {
     font-size: .8em;
 }
 
-img {
+img.hero {
     position: absolute;
     left: 0px;
     top: 0px;
 }
 
-.logo {
+img.logo {
     float: left
 }
     
