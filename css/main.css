@@ -9,7 +9,7 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
+a, p1 {
     text-decoration: none;
     color: #999;
 }
@@ -48,10 +48,8 @@ img.logo2 {
     margin-left: 0px;
 }
 
-.email {
-    position: relative;
-    top: -10px;
-    margin-left: 20%;
+.center {
+    text-align: center;
 }
     
     
