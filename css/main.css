@@ -47,5 +47,11 @@ img.logo2 {
     top: -10px;
     margin-left: 0px;
 }
+
+.email {
+    position: relative;
+    top: -20px;
+    margin-left: 20%; 
+}
     
     
