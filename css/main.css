@@ -31,13 +31,13 @@ footer {
 }
 
 img.hero {
-    position: absolute;
-    left: 0px;
-    top: 0px;
+    position: relative;
+    left: -10px;
+    top: -10px;
 }
 
 img.logo {
-    float: left
+    margin-left: 10%;
 }
     
     
