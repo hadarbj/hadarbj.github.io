@@ -36,8 +36,16 @@ img.hero {
     top: -10px;
 }
 
-img.logo {
-    margin-left: 10%;
+img.logo1 {
+    position: relative;
+    top: -10px;
+    margin-left: 20%;
+}
+
+img.logo2 {
+    position: relative;
+    top: -10px;
+    margin-left: 0px;
 }
     
     
