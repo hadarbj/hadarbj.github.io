@@ -48,8 +48,9 @@ img.logo2 {
     margin-left: 0px;
 }
 
-.center {
-    text-align: center;
+.right {
+    float: right;
+    margin-right: 20%;
 }
     
     
