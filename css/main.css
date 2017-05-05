@@ -49,7 +49,9 @@ img.logo2 {
 }
 
 .email {
-    text-align: center;
+    position: relative;
+    top: -10px;
+    margin-left: 50%;
 }
     
     
