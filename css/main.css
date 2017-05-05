@@ -11,7 +11,7 @@ nav ul li, footer ul li {
 }
 a, p1 {
     font-family:'Arial', 'Sans-Serif', 'Helvetica';
-    font-size: 1em;
+    font-size: 0.875em;
     text-decoration: none;
     color: #999;
 }
