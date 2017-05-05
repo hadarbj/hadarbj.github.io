@@ -35,22 +35,19 @@ img.hero {
     left: -10px;
     top: -10px;
 }
-
 img.logo1 {
-    position: relative;
-    top: -10px;
+    float: left;
     margin-left: 20%;
 }
 
 img.logo2 {
-    position: relative;
-    top: -10px;
+    float: left;
     margin-left: 0px;
 }
 
-.right {
-    float: right;
-    margin-right: 20%;
+.contact {
+    float: left;
+    margin-left: 20%;
 }
     
     
