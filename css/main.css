@@ -60,6 +60,7 @@ img.logo2 {
 
 .hero-image {
   background-image: url("https://res.cloudinary.com/cld-hadar/f_auto,q_auto:best,w_2000,c_scale/homepage.png");
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
