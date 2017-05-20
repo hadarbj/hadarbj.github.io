@@ -65,17 +65,19 @@ img.logo2 {
     }
     
     img.hero {
-    border: 5px solid #FDFCFB;
-}
+      position: relative;
+      left: -8px;
+      top: -10px;
+    }
     
     img.logo1 {
-    float: left;
-    margin-left: 40%;
+      float: left;
+      margin-left: 40%;
     }
 
     img.logo2 {
-    float: left;
-    margin-left: 0px;
+      float: left;
+      margin-left: 0px;
    }    
 }
     
