@@ -65,9 +65,7 @@ img.logo2 {
     }
     
     img.hero {
-    position: fixed;
-    left: 0px;
-    top: 0px;
+    border: 5px solid #FDFCFB;
 }
     
     img.logo1 {
