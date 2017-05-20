@@ -57,7 +57,7 @@ img.logo2 {
 }
 
 .hero-image {
-  background-image: url("https://res.cloudinary.com/cld-hadar/f_auto,q_auto:best,w_2000,c_scale/homepage.png");
+  background-image: url("https://res.cloudinary.com/cld-hadar/f_auto,q_auto/homepage.png");
   height: 70%;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,11 +65,23 @@ img.logo2 {
   position: relative;
 }
 
+@media only screen and (max-width: 2000px) {
+    
+    .hero-image {
+      background-image: url("https://res.cloudinary.com/cld-hadar/f_auto,q_auto,w_2000/homepage.png");
+    }
+    
+@media only screen and (max-width: 1400px) {
+    
+    .hero-image {
+      background-image: url("https://res.cloudinary.com/cld-hadar/f_auto,q_auto,w_1400/homepage.png");
+    }
+
 @media only screen and (max-width: 700px) {
     
     .hero-image {
       background-image: url("https://res.cloudinary.com/cld-hadar/f_auto,q_auto/mobile1.png");
-      height: 90%;
+      height: 85%;
     }
     
     .contact {
