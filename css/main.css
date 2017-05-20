@@ -58,7 +58,7 @@ img.logo2 {
 
 .hero-image {
   background-image: url("https://res.cloudinary.com/cld-hadar/f_auto,q_auto:best,w_2000,c_scale/homepage.png");
-  height: 50%;
+  height: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,7 +69,7 @@ img.logo2 {
     
     .hero-image {
       background-image: url("https://res.cloudinary.com/cld-hadar/f_auto,q_auto/mobile1.png");
-      height: 80%;
+      height: 90%;
     }
     
     .contact {
