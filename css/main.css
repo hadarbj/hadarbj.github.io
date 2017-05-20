@@ -65,9 +65,9 @@ img.logo2 {
     }
     
     img.hero {
-    position: relative;
-    left: -10px;
-    top: -10px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
 }
     
     img.logo1 {
