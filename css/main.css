@@ -64,6 +64,12 @@ img.logo2 {
         display: none;
     }
     
+    img.hero {
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+    
     img.logo1 {
     float: left;
     margin-left: 40%;
