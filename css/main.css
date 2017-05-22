@@ -93,12 +93,14 @@ img.logo2 {
     img.logo1 {
       float: left;
       margin-left: 30%;
+      margin-top: 1%;
       width: 20%;
     }
 
     img.logo2 {
       float: left;
       margin-left: 0px;
+      margin-top: 1%;
       width: 20%;
    }    
 }
