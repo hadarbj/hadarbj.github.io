@@ -115,7 +115,6 @@
       var qualityLevels = demoplayer.videojs.qualityLevels();
       qualityLevels.on('change', changeOfResolution);
       qualityLevels.on('addqualitylevel', function(event) { console.log(event.qualityLevel.width); });
-      demoplayer.on('loadedmetadata',changeOfSrc);
   
       demoplayer.source('hd_trim2',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
