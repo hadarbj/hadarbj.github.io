@@ -83,8 +83,14 @@
 
 <script type="text/javascript">
 
-var cld = cloudinary.Cloudinary.new({ cloud_name: 'hadar' });
-
+      var cld = cloudinary.Cloudinary.new({ cloud_name: 'hadar' });
+  
+      var demoplayer = cld.videoPlayer('demo-adaptive-player');
+  
+      var eventplayer = cld.videoPlayer('demo-event-player', { playedEventTimes: [3, 10] });
+  
+      var plistplayer = cld.videoPlayer('demo-playlist-player');
+  
       // Set video sources
       var source1 = {
         publicId: 'oceans',
