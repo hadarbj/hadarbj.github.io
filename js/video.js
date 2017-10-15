@@ -67,23 +67,59 @@ function setProfile(profile) {
   demoplayer.source(file, { sourceTypes: ['hls'], transformation: {streaming_profile: profile } });
 }
 
-      var cld = cloudinary.Cloudinary.new({ cloud_name: 'hadar' });
+var cld = cloudinary.Cloudinary.new({ cloud_name: 'hadar' });
   
-      var adaptive = document.getElementById("adaptive");
-      document.getElementById("demo-adaptive-player").addEventListener('resize',updateOnResize, false);
+var adaptive = document.getElementById("adaptive");
+document.getElementById("demo-adaptive-player").addEventListener('resize',updateOnResize, false);
   
-      var demoplayer = cld.videoPlayer('demo-adaptive-player');
+var demoplayer = cld.videoPlayer('demo-adaptive-player');
   
-      var qualityLevels = demoplayer.videojs.qualityLevels();
-      qualityLevels.on('change', changeOfResolution);
-      qualityLevels.on('addqualitylevel', function(event) { console.log(event.qualityLevel.width); });
+var qualityLevels = demoplayer.videojs.qualityLevels();
+qualityLevels.on('change', changeOfResolution);
+qualityLevels.on('addqualitylevel', function(event) { console.log(event.qualityLevel.width); });
   
-      demoplayer.source('hd_trim2',{ sourceTypes: ['hls'], 
+demoplayer.source('hd_trim2',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
+
+function updateOnEvent(eventStr) {
+  var eventsDiv = document.querySelector('#vid-events');
+  var text = document.createTextNode(eventStr);
+  var textDiv = document.createElement('div');
+  textDiv.appendChild(text);
+  eventsDiv.appendChild(textDiv);
+  eventsDiv.scrollTop = eventsDiv.scrollHeight;
+}
+
+function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+function startTime()
+        var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+        return (h + ":" + m + ":" + s);
+}
+
+var eventplayer = cld.videoPlayer('demo-event-player', { playedEventTimes: [3, 10] });
+
+var eventTypes = ['play', 'pause', 'volumechange', 'mute', 'unmute', 'fullscreenchange',
+      'seek', 'sourcechanged', 'timeplayed', 'percentsplayed', 'ended'];
+
+eventTypes.forEach(function(eventType) {
+      eventplayer.on(eventType, function(event) {
+        var eventStr = startTime() + " " + eventType;
+        if (event.eventData) {
+          eventStr = eventStr + ": " + JSON.stringify(event.eventData)
+        }
+        updateOnEvent(eventStr);
+      })
+    });
   
-      var eventplayer = cld.videoPlayer('demo-events-player', { playedEventTimes: [3, 10] });
+var eventplayer = cld.videoPlayer('demo-events-player', { playedEventTimes: [3, 10] });
   
-      eventplayer.source('hd_trim2',{ sourceTypes: ['hls'], 
+eventplayer.source('hd_trim2',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
   
       var plistplayer = cld.videoPlayer('demo-playlist-player');
