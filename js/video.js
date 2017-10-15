@@ -130,7 +130,3 @@ eventTypes.forEach(function(eventType) {
   
  plistplayer.source('game2',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
-
- var recplayer = cld.videoPlayer('demo-recommendation-player');
-
-
