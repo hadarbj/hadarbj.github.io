@@ -87,6 +87,9 @@
   
       var demoplayer = cld.videoPlayer('demo-adaptive-player');
   
+      demoplayer.source('hd_trim2',{ sourceTypes: ['hls'], 
+                              transformation: {streaming_profile: 'hd' } });
+  
       var eventplayer = cld.videoPlayer('demo-event-player', { playedEventTimes: [3, 10] });
   
       var plistplayer = cld.videoPlayer('demo-playlist-player');
