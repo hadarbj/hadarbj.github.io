@@ -131,7 +131,7 @@ eventplayer.source('hd_trim2',{ sourceTypes: ['hls'],
       plistplayer.source('game2',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
 
-      var recplayer = cld.videoPlayer('demo-recommendation-player', { autoShowRecommendations: true });
+      var recplayer = cld.videoPlayer('demo-recommendation-player');
   
       recplayer.source('Homepage_2',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
