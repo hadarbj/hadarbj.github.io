@@ -61,6 +61,7 @@ function removeProfileButtons() {
     if(btn)
       adaptive.removeChild(btn);
   }
+}
 
 function setProfile() {
   removeProfileButtons();
