@@ -38,6 +38,13 @@
       muted
       class="cld-video-player cld-video-player-skin-dark">
     </video>
+    <p id="dimension"> 
+      Streaming Profile:
+      <input type="radio" name="profile" onclick="setProfile(this.value)" value="sd"> SD
+      <input type="radio" name="profile" onclick="setProfile(this.value)" value="hd" checked="checked"> HD
+      <input type="radio" name="profile" onclick="setProfile(this.value)" value="full_hd"> Full HD     
+    </p>
+    <button id="auto" class="active button" onClick="requestAuto()">Auto</button></div> 
   </div>
   
   <div id="events" class="grey">
@@ -50,7 +57,10 @@
       muted
       class="cld-video-player cld-video-player-skin-dark">
     </video>
-  </div>
+    <br>
+    <div id="vid-events" class="events center">
+    </div>
+ </div>
   
   <div id="playlist" class="grey">
     <br>
@@ -62,6 +72,12 @@
       muted
       class="cld-video-player cld-video-player-skin-dark">
     </video>
+    <div class="center">
+      <input type="image" id="list0" value="0" class="thumbnail" src="https://res.cloudinary.com/hadar/video/upload/w_200/game2.jpg", width=198 onclick="playMe(this.value);"/
+><input type="image" id="list1" value="1" class="thumbnail" src="https://res.cloudinary.com/hadar/video/upload/w_200/hls_30s_test.jpg", width=199 onclick="playMe(this.value);"/
+><input type="image" id="list2" value="2" class="thumbnail" src="https://res.cloudinary.com/hadar/video/upload/w_200/hd_trim2.jpg", width=199 onclick="playMe(this.value);"/
+><input type="image" id="list3" value="3" class="thumbnail" src="https://res.cloudinary.com/hadar/video/upload/w_200/Homepage_2.jpg", width=198 onclick="playMe(this.value);"/
+></div>
   </div>
   
   <div id="recommendation" class="grey">
