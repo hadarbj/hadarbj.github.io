@@ -54,14 +54,23 @@ function changeOfResolution() {
   }
 }
 
-function setProfile(profile) {
+function removeProfileButtons() {
   var loop = document.getElementsByClassName("button").length - 1;
   for (var i = 0; i < loop; i++) {
     var btn = document.getElementById(i)
     if(btn)
       adaptive.removeChild(btn);
   }
+
+function setProfile() {
+  removeProfileButtons();
   var file = document.getElementById("FileName").value;
+  var profile;
+  var profiles = document.getElementsByName("profile");
+  for(var i = 0; i < profiles.length; i++){
+    if(profiles[i].checked){
+        profile = profiles[i].value;
+    }
   demoplayer.source(file, { sourceTypes: ['hls'], transformation: {streaming_profile: profile } });
 }
 
