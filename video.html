@@ -32,14 +32,46 @@
     <br>
     <h1>Adaptive Video Streaming</h1>
     <br>
+    <video
+      id="demo-adaptive-player"
+      controls
+      muted
+      class="cld-video-player cld-video-player-skin-dark">
+    </video>
+  </div>
+  
+  <div id="events" class="grey">
+    <br>
+    <h1>Events & Analytics</h1>
+    <br>
+    <video
+      id="demo-events-player"
+      controls
+      muted
+      class="cld-video-player cld-video-player-skin-dark">
+    </video>
+  </div>
+  
+  <div id="playlist" class="grey">
+    <br>
+    <h1>Video Playlists</h1>
+    <br>
+    <video
+      id="demo-playlist-player"
+      controls
+      muted
+      class="cld-video-player cld-video-player-skin-dark">
+    </video>
   </div>
   
   <div id="recommendation" class="grey">
+    <br>
+    <h1>Recommended Content</h1>
+    <br>
     <video
-      id="example-player"
+      id="demo-recommendation-player"
       controls
       muted
-      autoplay
       class="cld-video-player cld-video-player-skin-dark"
       data-cld-transformation='{ "width": 500, "crop": "limit" }'>
     </video>
@@ -73,7 +105,7 @@ var cld = cloudinary.Cloudinary.new({ cloud_name: 'hadar' });
       
       source1.recommendations = [source2];
 
-      var player = cld.videoPlayer('example-player', { autoShowRecommendations: true });
+      var player = cld.videoPlayer('demo-recommendation-player', { autoShowRecommendations: true });
 
       player.source(source1);
 
