@@ -70,6 +70,7 @@ function setProfile() {
     if(profiles[i].checked){
         profile = profiles[i].value;
     }
+  }
   demoplayer.source("hd_trim2", { sourceTypes: ['hls'], transformation: {streaming_profile: profile } });
 }
 
