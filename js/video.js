@@ -102,7 +102,7 @@ function startTime() {
         return (h + ":" + m + ":" + s);
 }
 
-var eventplayer = cld.videoPlayer('demo-event-player', { playedEventTimes: [3, 10] });
+var eventplayer = cld.videoPlayer('demo-events-player', { playedEventTimes: [3, 10] });
 
 var eventTypes = ['play', 'pause', 'volumechange', 'mute', 'unmute', 'fullscreenchange',
       'seek', 'sourcechanged', 'timeplayed', 'percentsplayed', 'ended'];
@@ -116,8 +116,6 @@ eventTypes.forEach(function(eventType) {
         updateOnEvent(eventStr);
       })
     });
-  
-var eventplayer = cld.videoPlayer('demo-events-player', { playedEventTimes: [3, 10] });
   
 eventplayer.source('hd_trim2',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
