@@ -28,7 +28,6 @@ function requestAuto() {
 }
 
 function addButton(bid,qlevel,desc,css) {
-      console.log("addButton");
       var btn = document.createElement("BUTTON");
       adaptive.appendChild(btn);
       btn.addEventListener("click", requestResolution);
@@ -39,7 +38,6 @@ function addButton(bid,qlevel,desc,css) {
 }
 
 function changeOfResolution() {
-  console.log("changeOfResolution",qualityLevels.length)
   for (var i = 0; i < qualityLevels.length; i++) {
     var btn = document.getElementById(i);
     var qlevel = qualityLevels[i];
