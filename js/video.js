@@ -64,14 +64,13 @@ function removeProfileButtons() {
 
 function setProfile() {
   removeProfileButtons();
-  var file = document.getElementById("FileName").value;
   var profile;
   var profiles = document.getElementsByName("profile");
   for(var i = 0; i < profiles.length; i++){
     if(profiles[i].checked){
         profile = profiles[i].value;
     }
-  demoplayer.source(file, { sourceTypes: ['hls'], transformation: {streaming_profile: profile } });
+  demoplayer.source("hd_trim2", { sourceTypes: ['hls'], transformation: {streaming_profile: profile } });
 }
 
 var cld = cloudinary.Cloudinary.new({ cloud_name: 'hadar' });
