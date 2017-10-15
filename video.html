@@ -122,30 +122,9 @@
       var eventplayer = cld.videoPlayer('demo-events-player', { playedEventTimes: [3, 10] });
   
       var plistplayer = cld.videoPlayer('demo-playlist-player');
-  
-      // Set video sources
-      var source1 = {
-        publicId: 'oceans',
-        info: {
-          title: 'Oceans',
-          subtitle: 'A movie about oceans',
-          description: 'A description of the oceans movie'
-        }
-      }
-      var source2 = {
-        publicId: 'Homepage_2',
-        info: {
-          title: 'Cloud Book Study',
-          subtitle: 'A short video with a nice book animation',
-          description: 'A description of the book movie.'
-        }
-      }
-      
-      source1.recommendations = [source2];
 
-      var player = cld.videoPlayer('demo-recommendation-player', { autoShowRecommendations: true });
+      var recplayer = cld.videoPlayer('demo-recommendation-player', { autoShowRecommendations: true });
 
-      player.source(source1);
 
 </script>
 
