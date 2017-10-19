@@ -125,10 +125,15 @@ eventTypes.forEach(function(eventType) {
       })
     });
   
- eventplayer.source('hd_trim2',{ sourceTypes: ['hls'], 
+ eventplayer.source('hls_30s_test',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
   
  var plistplayer = cld.videoPlayer('demo-playlist-player');
   
  plistplayer.source('game2',{ sourceTypes: ['hls'], 
+                              transformation: {streaming_profile: 'hd' } });
+
+var recplayer = cld.videoPlayer('demo-recommendation-player');
+
+recplayer.source('Homepage_2',{ sourceTypes: ['hls'], 
                               transformation: {streaming_profile: 'hd' } });
